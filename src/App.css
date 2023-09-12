@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "OrkneyRegular";
+  src: local("orkney-regular"), url("./fonts/orkney-regular.otf") format("otf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "OrkneyLight";
+  src: local("orkney-light"), url("./fonts/orkney-light.otf") format("otf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "OrkneyBold";
+  src: local("orkney-bold"), url("./fonts/orkney-bold.otf") format("otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "OrkneyMedium";
+  src: local("orkney-medium"), url("./fonts/orkney-medium.otf") format("otf");
 }
