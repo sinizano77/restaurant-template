@@ -107,8 +107,7 @@ function Navbar() {
         return pageLinkItems.map((pageLinkItems) => (
             <NavLink 
                 to={pageLinkItems.href}
-                className = {({ isActive }) => isActive ? styling.pageLinkActive : styling.pageLinkNotActive
-              }>
+                className = {({ isActive }) => isActive ? styling.pageLinkActive : styling.pageLinkNotActive}>
                 <Typography className = {styling.pageLinkText}>
                     {pageLinkItems.text}
                 </Typography>
@@ -145,7 +144,10 @@ function Navbar() {
                         <List>
                             {pageLinkItems.map((pageLinkItems) =>
                                 <ListItem>
-                                    <NavLink to={pageLinkItems.href} className={styling.drawerButtons}>
+                                    <NavLink 
+                                        to={pageLinkItems.href} className={styling.drawerButtons}
+                                        style={({ isActive }) => ({color: isActive ? theme.palette.secondary.main : 'white',})}
+                                        >
                                         <ListItemButton>
                                             <Typography>
                                                 {pageLinkItems.text}
