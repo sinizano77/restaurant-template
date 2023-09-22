@@ -1,18 +1,10 @@
-import appTheme from "../../theme";
+import HomeSlideshow from "./HomeSlideshow";
 
 function HomePage() {
 
     return (
-        <div style={{ 
-            display: 'flex',
-			width: '100%',
-            flexDirection: 'column',
-            alignItems: 'center',
-            }}>
-            <h1>Homepage</h1>
-        </div>
+        <HomeSlideshow/>
     );
-
-};
+}
 
 export default HomePage;

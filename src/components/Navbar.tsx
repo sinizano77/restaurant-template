@@ -13,7 +13,7 @@ import {
     ListItemButton,
     Divider,
 } from '@mui/material';
-import {makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import theme from '../theme';
 import { NavLink } from "react-router-dom";
 import SlurpLogo from '../assets/slurp-logo.svg';
@@ -199,7 +199,7 @@ function Navbar() {
         );
     }
 
-    //Component pieces
+    //Final return that contains all component pieces
     return (
         <React.Fragment>
             <AppBar className = {styling.appbar}>
@@ -217,7 +217,7 @@ function Navbar() {
                 </Toolbar>
                 <Divider sx={{
                     borderColor: 'white',
-                    border: "1.5px solid currentColor",
+                    border: "1px solid currentColor",
                     }}/>
             </AppBar>
             <div className={styling.filler} />

@@ -29,8 +29,16 @@ const appTheme = createTheme ({
     typography: {
         fontFamily: 'OrkneyLight, Roboto, Arial, sans-serif',
         h1: {
+			fontFamily: 'OrkneyMedium',
+			fontSize: '4.5rem',
+			fontWeight: 800,
+			lineHeight: 1.2,
+			letterSpacing: '-0.01562em',
+		},
+		h3: {
+			fontFamily: 'OrkneyMedium',
 			fontWeight: 500,
-			fontSize: '1.2rem',
+			fontSize: '3rem',
 			lineHeight: 1.167,
 			letterSpacing: '0em',
 		},
@@ -38,7 +46,19 @@ const appTheme = createTheme ({
 			fontWeight: 400,
 			fontSize: '1rem',
 			lineHeight: 1.5,
+			letterSpacing: '0.0138em',
+		},
+		subtitle1: {
+			fontWeight: 400,
+			fontSize: '1.2rem',
+			lineHeight: 1.5,
 			letterSpacing: '0.00938em',
+		},
+		subtitle2: {
+			fontWeight: 500,
+			fontSize: '0.875rem',
+			lineHeight: 1.57,
+			letterSpacing: '0.00714em',
 		},
     },
     
