@@ -1,10 +1,13 @@
+Foundation provided by Create React App
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+Using your OS's Command Line Interface, navigate to the project directory, then you can run:
+(Assuming you have Node.js installed already)
 
 ### `npm start`
 
@@ -44,5 +47,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## External dependencies that NEED to be installed specifically for this app
+
+1. React Slideshow (version 4.2.1):
+    Documentation: https://react-slideshow-image.netlify.app/?path=/story/introduction--page
+    Run this command in your project directory:
+    ### `npm install react-slideshow-image`
 
 by Michael Orlanes
