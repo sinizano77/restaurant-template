@@ -5,7 +5,7 @@ import {
     useMediaQuery,
 } from '@mui/material';
 import theme from '../../theme';
-import { NavigateBeforeOutlined, NavigateNextOutlined } from '@mui/icons-material'
+import NextPrevSlideButton from '../../components/NextPrevButtons';
 
 //Image imports
 import ramen1 from '../../assets/ramen1.jpg';
@@ -54,16 +54,6 @@ const useStyles = makeStyles(() => ({
         color: 'white',
         filter: 'brightness(100%)'
     },
-    nextPrevSlideButtonIcons: {
-        color: 'black',
-    },
-    iconContainer: {
-        backgroundColor: 'white',
-        opacity: '50%',
-        borderRadius: '100%',
-        lineHeight: '0%',
-    },
-    
 }));
 
 //Slideshow Component Class
@@ -78,27 +68,6 @@ function HomeSlideshow() {
         {header:'Header4', imageUrl: ramen3, isButton: false,buttonText: ''}, 
         {header:'Header5', imageUrl: ramen4, isButton: true, buttonText: 'ButtonC'},
     ];
-
-    //Contains the arrow buttons that toggle next or previous slides
-    function nextPrevSlideButton(isPrevButton: boolean) {
-        return (
-            <Button sx={{transition:'all .2s ease-in-out','&:hover': {transform: 'scale(1.3)'}}}>
-                <div className={styling.iconContainer}>
-                    {isPrevButton ? (
-                        <NavigateBeforeOutlined 
-                        sx={{fontSize: '2em', lineHeight: '0%',}}
-                        className={styling.nextPrevSlideButtonIcons}
-                        />
-                    ) : (
-                        <NavigateNextOutlined 
-                        sx={{fontSize: '2em', lineHeight: '0%'}}
-                        className={styling.nextPrevSlideButtonIcons}
-                        />
-                    )}
-                </div>
-            </Button>
-        );
-    }
 
     //Contains the optional button that sit underneath the body text of each slide
     function slideButton(buttonText: string) {
@@ -124,9 +93,7 @@ function HomeSlideshow() {
     //Contains slideshow content for each slide
     function slides() {
         return slideshowContent.map((slideshowContent) => (
-            <div 
-                className={styling.slides}
-            >
+            <div className={styling.slides}>
                 <div className={styling.slideImage}
                 style= {{backgroundImage: `url(${slideshowContent.imageUrl})`}}/>
                 <div className={styling.slideContainer}>
@@ -156,8 +123,10 @@ function HomeSlideshow() {
             transitionDuration={750}
             indicators={true}
             autoplay={true}
-            prevArrow={nextPrevSlideButton(true)}
-            nextArrow={nextPrevSlideButton(false)}
+            //prevArrow={<NextPrevSlideButton direction='left'/>}
+            //nextArrow={<NextPrevSlideButton direction='right'/>}
+            prevArrow={NextPrevSlideButton('left')}
+            nextArrow={NextPrevSlideButton('right')}
             >
                 {slides()}
         </Slide>

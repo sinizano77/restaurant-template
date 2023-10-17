@@ -1,9 +1,14 @@
+import * as React from 'react';
 import HomeSlideshow from "./HomeSlideshow";
+import Carousel from "../../components/Carousel";
 
 function HomePage() {
 
     return (
-        <HomeSlideshow/>
+        <React.Fragment>
+            <HomeSlideshow/>
+            <Carousel/>
+        </React.Fragment>
     );
 }
 

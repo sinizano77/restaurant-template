@@ -42,11 +42,24 @@ const appTheme = createTheme ({
 			lineHeight: 1.167,
 			letterSpacing: '0em',
 		},
+		h5: {
+			fontFamily: 'OrkneyMedium',
+			fontWeight: 500,
+			fontSize: '1.5rem',
+			lineHeight: 1.235,
+			letterSpacing: '0.00735em',
+		},
         body1: {
 			fontWeight: 400,
 			fontSize: '1rem',
 			lineHeight: 1.5,
 			letterSpacing: '0.0138em',
+		},
+		body2: {
+			fontWeight: 400,
+			fontSize: '0.9rem',
+			lineHeight: 1.43,
+			letterSpacing: '0.01071em',
 		},
 		subtitle1: {
 			fontWeight: 400,

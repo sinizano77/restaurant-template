@@ -50,6 +50,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## External dependencies that NEED to be installed specifically for this app
 
+1. Install node_modules:
+    Run this command in your project directory:
+    ### `npm install react-slideshow-image`
+
 1. React Slideshow (version 4.2.1):
     Documentation: https://react-slideshow-image.netlify.app/?path=/story/introduction--page
     Run this command in your project directory:
